@@ -6,7 +6,7 @@ Criação de artigo para detecção de padrões de ataques em rede
 - [ ] slides de PoC
 - [x] Escolher modelos
 - [ ] Pesquisar sobre diferentes modelos
-- [ ] Começar a estrutura do artigo
+- [x] Começar a estrutura do artigo
 
 ### Analise do ChatGPT sobre possíveis decisões do projeto
 
