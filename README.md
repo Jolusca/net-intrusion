@@ -7,6 +7,7 @@ Criação de artigo para detecção de padrões de ataques em rede
 - [x] Escolher modelos
 - [ ] Pesquisar sobre diferentes modelos
 - [ ] Começar a estrutura do artigo
+
 ### Analise do ChatGPT sobre possíveis decisões do projeto
 
 https://chatgpt.com/share/69035515-fbfc-8001-b794-d1da3a529152
