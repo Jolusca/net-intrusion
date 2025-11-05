@@ -1,1 +1,51 @@
 .venv
+
+# Arquivos temporários e auxiliares do LaTeX
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.idx
+*.ind
+*.lof
+*.lot
+*.out
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.fls
+*.log
+*.fdb_latexmk
+*.synctex.gz
+*.synctex.gz(busy)
+*.run.xml
+*.nav
+*.snm
+*.vrb
+
+# Arquivos de backup ou temporários
+*~
+*.bak
+*.tmp
+*.swp
+*.sav
+*.backup
+*.old
+
+# Diretórios de build (ex: latexmk, texlive, etc.)
+build/
+out/
+_output/
+texmf/
+
+# Arquivos específicos do VS Code
+.vscode/
+*.code-workspace
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
