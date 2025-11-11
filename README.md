@@ -3,11 +3,12 @@ Criação de artigo para detecção de padrões de ataques em rede
 
 ### TODO 
 - [x] reseach questions
-- [ ] slides de PoC
+- [x] slides de PoC 
 - [x] Escolher modelos
 - [ ] Pesquisar sobre diferentes modelos
 - [x] Começar a estrutura do artigo
 
+https://www.canva.com/design/DAG3xUeqaa8/gn4ky1JF9uxutgEoXoED8w/edit
 ### Analise do ChatGPT sobre possíveis decisões do projeto
 
 https://chatgpt.com/share/69035515-fbfc-8001-b794-d1da3a529152
