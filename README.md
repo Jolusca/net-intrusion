@@ -5,10 +5,10 @@ Criação de artigo para detecção de padrões de ataques em rede
 - [x] reseach questions
 - [x] slides de PoC 
 - [x] Escolher modelos
-- [ ] Pesquisar sobre diferentes modelos
+- [x] Pesquisar sobre diferentes modelos
 - [x] Começar a estrutura do artigo
-- [ ] Redes Neurais (MLP)
-- [x] Isolation Forest (atualizar)
+- [x] Redes Neurais (MLP)
+- [ ] Isolation Forest (atualizar)
 - [ ] KNN
 - [x] Random Forest
 
@@ -27,6 +27,8 @@ https://www.kaggle.com/datasets/sampadab17/network-intrusion-detection
 
 - 1. A utilização de Machine Learning no processo de analise de ataques a redes de servidores se prova eficiente?
 - 2. Como a escolha do modelo utilizado para analisar os ataques a redes de servidores pode afetar no resultado da analise? (Random Forest, MLP, KNN, Isolation Forest)
+- [x] comparação MLP e Random Forest
+- [ ] comparação MLP, KNN e Isolation Forest
 - 3. Como os dados analisados alteram o resultado da analise de ataques a redes de servidores utilizando Machine Learning?
 - 4. Quais os melhores modelos para serem utilizados com a presença dos dados selecionados?
 
@@ -34,12 +36,14 @@ https://www.kaggle.com/datasets/sampadab17/network-intrusion-detection
 
 https://scikit-learn.org/stable/supervised_learning.html
 
+
 ## Referências de artigos semelhantes
 
 https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://sol.sbc.org.br/index.php/sbrc/article/download/35134/34925/&ved=2ahUKEwjf1KDJiOqQAxXhBrkGHeaZNvwQFnoECBkQAQ&usg=AOvVaw1BjbKxYF_zPFljj5mRCFdz
 
 https://sol.sbc.org.br/index.php/sbrc/article/view/35170/34961
-
+### Livro 
+https://0-lucas.github.io/digital-garden/99.-Books/Hands-on-Machine-Learning.pdf
 
 
 
