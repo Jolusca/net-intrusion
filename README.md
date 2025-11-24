@@ -8,6 +8,7 @@ Criação de artigo para detecção de padrões de ataques em rede
 - [x] Pesquisar sobre diferentes modelos
 - [x] Começar a estrutura do artigo
 - [x] Redes Neurais (MLP)
+- [x] MLP reduzido sem o src bytes (correlação com o Random Forest)
 - [ ] Isolation Forest (atualizar)
 - [ ] KNN
 - [x] Random Forest
