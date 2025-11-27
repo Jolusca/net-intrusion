@@ -9,8 +9,8 @@ Criação de artigo para detecção de padrões de ataques em rede
 - [x] Começar a estrutura do artigo
 - [x] Redes Neurais (MLP)
 - [x] MLP reduzido sem o src bytes (correlação com o Random Forest)
-- [ ] Isolation Forest (atualizar)
-- [ ] KNN
+- [x] Isolation Forest
+- [x] KNN
 - [x] Random Forest
 
 https://www.canva.com/design/DAG3xUeqaa8/gn4ky1JF9uxutgEoXoED8w/edit
