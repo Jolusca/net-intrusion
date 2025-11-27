@@ -12,6 +12,10 @@ Criação de artigo para detecção de padrões de ataques em rede
 - [x] Isolation Forest
 - [x] KNN
 - [x] Random Forest
+- [ ] Comparação entre os modelos
+- [ ] Introdução do dataset
+- [ ] Estruturar análises com retirada de colunas
+- [ ] Analisar dataset menos robusto (?)
 
 https://www.canva.com/design/DAG3xUeqaa8/gn4ky1JF9uxutgEoXoED8w/edit
 
