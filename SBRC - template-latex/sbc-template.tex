@@ -1,163 +1,139 @@
 \documentclass[12pt]{article}
 
+% -------------------------
+% Template SBRC / SBC
+% -------------------------
 \usepackage{sbc-template}
-\usepackage{graphicx,url}
-\usepackage[utf8]{inputenc}
-\usepackage[brazil]{babel}
-\usepackage[latin1]{inputenc}  
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
 
-     
 \sloppy
 
-\title{CHANGE ME }
+\title{Estudo da Influência das Features e do Desempenho dos Classificadores na Detecção de Anomalias em Redes}
 
-\author{Luciana P. Nedel\inst{1}, Rafael H. Bordini\inst{2}, Flávio Rech
-  Wagner\inst{1}, Jomi F. Hübner\inst{3} }
-
-
-\address{Instituto de Informática -- Universidade Federal do Rio Grande do Sul
-  (UFRGS)\\
-  Caixa Postal 15.064 -- 91.501-970 -- Porto Alegre -- RS -- Brazil
-\nextinstitute
-  Department of Computer Science -- University of Durham\\
-  Durham, U.K.
-\nextinstitute
-  Departamento de Sistemas e Computação\\
-  Universidade Regional de Blumenal (FURB) -- Blumenau, SC -- Brazil
-  \email{\{nedel,flavio\}@inf.ufrgs.br, R.Bordini@durham.ac.uk,
-  jomi@inf.furb.br}
+\author{
+João Lucas Oliveira Mota\inst{1},
+João Lucas Rodrigues da Silva\inst{2},
+José Alberto Rodrigues Neto\inst{2}
 }
 
-\begin{document} 
+\address{
+Departamento de Engenharia de Teleinformática -- Universidade Federal do Ceará (UFC)\\
+Fortaleza -- CE -- Brasil
+\nextinstitute
+Departamento de Computação -- Universidade Federal do Ceará (UFC)\\
+Fortaleza -- CE -- Brasil
+\email{\{jlucasoliveira2002\}@gmail.com,
+\{joaolucas.rodrigues,jose.alberto\}@alu.ufc.br}
+}
+
+\begin{document}
 
 \maketitle
 
 \begin{abstract}
-  This meta-paper describes the style to be used in articles and short papers
-  for SBC conferences. For papers in English, you should add just an abstract
-  while for the papers in Portuguese, we also ask for an abstract in
-  Portuguese (``resumo''). In both cases, abstracts should not have more than
-  10 lines and must be in the first page of the paper.
+This document is a model and instructions for \LaTeX.
+This and the sbc-template style define the components of your paper.
+Do not use symbols, special characters, footnotes, or math in the paper title or abstract.
 \end{abstract}
-     
-\begin{resumo} 
-  Este meta-artigo descreve o estilo a ser usado na confecção de artigos e
-  resumos de artigos para publicação nos anais das conferências organizadas
-  pela SBC. É solicitada a escrita de resumo e abstract apenas para os artigos
-  escritos em português. Artigos em inglês deverão apresentar apenas abstract.
-  Nos dois casos, o autor deve tomar cuidado para que o resumo (e o abstract)
-  não ultrapassem 10 linhas cada, sendo que ambos devem estar na primeira
-  página do artigo.
+
+\begin{resumo}
+Este documento apresenta o modelo e o conjunto de instruções para artigos elaborados em \LaTeX\ segundo o padrão da SBC.
+O arquivo \textit{sbc-template} define os principais componentes do artigo, como título, autores e seções.
 \end{resumo}
 
-
-\section{General Information}
-
-All full papers and posters (short papers) submitted to some SBC conference,
-including any supporting documents, should be written in English or in
-Portuguese. The format paper should be A4 with single column, 3.5 cm for upper
-margin, 2.5 cm for bottom margin and 3.0 cm for lateral margins, without
-headers or footers. The main font must be Times, 12 point nominal size, with 6
-points of space before each paragraph. Page numbers must be suppressed.
-
-Full papers must respect the page limits defined by the conference.
-Conferences that publish just abstracts ask for \textbf{one}-page texts.
-
-\section{First Page} \label{sec:firstpage}
-
-The first page must display the paper title, the name and address of the
-authors, the abstract in English and ``resumo'' in Portuguese (``resumos'' are
-required only for papers written in Portuguese). The title must be centered
-over the whole page, in 16 point boldface font and with 12 points of space
-before itself. Author names must be centered in 12 point font, bold, all of
-them disposed in the same line, separated by commas and with 12 points of
-space after the title. Addresses must be centered in 12 point font, also with
-12 points of space after the authors' names. E-mail addresses should be
-written using font Courier New, 10 point nominal size, with 6 points of space
-before and 6 points of space after.
-
-The abstract and ``resumo'' (if is the case) must be in 12 point Times font,
-indented 0.8cm on both sides. The word \textbf{Abstract} and \textbf{Resumo},
-should be written in boldface and must precede the text.
-
-\section{CD-ROMs and Printed Proceedings}
-
-In some conferences, the papers are published on CD-ROM while only the
-abstract is published in the printed Proceedings. In this case, authors are
-invited to prepare two final versions of the paper. One, complete, to be
-published on the CD and the other, containing only the first page, with
-abstract and ``resumo'' (for papers in Portuguese).
-
-\section{Sections and Paragraphs}
-
-Section titles must be in boldface, 13pt, flush left. There should be an extra
-12 pt of space before each title. Section numbering is optional. The first
-paragraph of each section should not be indented, while the first lines of
-subsequent paragraphs should be indented by 1.27 cm.
-
-\subsection{Subsections}
-
-The subsection titles must be in boldface, 12pt, flush left.
-
-\section{Figures and Captions}\label{sec:figs}
+\section{Introdução}
+CHANGE ME
+Este artigo investiga a influência da seleção de atributos e do desempenho de diferentes
+classificadores na detecção de anomalias em tráfego de redes de computadores.
 
 
-Figure and table captions should be centered if less than one line
-(Figure~\ref{fig:exampleFig1}), otherwise justified and indented by 0.8cm on
-both margins, as shown in Figure~\ref{fig:exampleFig2}. The caption font must
-be Helvetica, 10 point, boldface, with 6 points of space before and after each
-caption.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.5\textwidth]{fig1.jpg}
-\caption{A typical figure}
-\label{fig:exampleFig1}
-\end{figure}
+\section{Dataset e pré-processamento}
+\subsection{Dataset}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.3\textwidth]{fig2.jpg}
-\caption{This figure is an example of a figure caption taking more than one
-  line and justified considering margins mentioned in Section~\ref{sec:figs}.}
-\label{fig:exampleFig2}
-\end{figure}
+O conjunto de dados utilizado foi obtido a partir da plataforma Kaggle, no repositório
+\textit{Network Intrusion Detection}, disponibilizado publicamente por
+Sampada Bhosale~\cite{dataset_kaggle}.
 
-In tables, try to avoid the use of colored or shaded backgrounds, and avoid
-thick, doubled, or unnecessary framing lines. When reporting empirical data,
-do not use more decimal digits than warranted by their precision and
-reproducibility. Table caption must be placed before the table (see Table 1)
-and the font used must also be Helvetica, 10 point, boldface, with 6 points of
-space before and after each caption.
 
-\begin{table}[ht]
-\centering
-\caption{Variables to be considered on the evaluation of interaction
-  techniques}
-\label{tab:exTable1}
-\includegraphics[width=.7\textwidth]{table.jpg}
-\end{table}
+O dataset foi construído a partir da simulação de um ambiente de rede militar típico da Força Aérea dos Estados Unidos, desenvolvido
+para representar diferentes tipos de tráfego de rede, incluindo tanto comunicações legítimas quanto diversos tipos de ataques.
+Cada instância do conjunto de dados representa uma conexão de rede, contendo atributos como a quantidade de bytes transmitidos pela origem,
+a duração da conexão e outros parâmetros, conforme descrito na tabela apresentada no Apêndice.
 
-\section{Images}
+Por fim, após as simulações realizadas de forma supervisionada, as conexões foram classificadas como tráfego normal ou como intrusão, 
+fazendo com que a variável alvo seja do tipo binária, assumindo os valores Normal ou Anomalia.
 
-All images and illustrations should be in black-and-white, or gray tones,
-excepting for the papers that will be electronically available (on CD-ROMs,
-internet, etc.). The image resolution on paper should be about 600 dpi for
-black-and-white images, and 150-300 dpi for grayscale images.  Do not include
-images with excessive resolution, as they may take hours to print, without any
-visible difference in the result. 
+\subsection{Pré-processamento}
+CHANGE ME A aplicação de PCA como etapa de pré-processamento tem se mostrado eficaz para reduzir a dimensionalidade 
+dos dados sem perda significativa de informação, preservando cerca de 99\% da variância original mesmo 
+com reduções superiores a 50\% no número de atributos, conforme observado por Santos e Miani~\cite{santos_reducao_dimensao_intrusao}.
 
-\section{References}
+\section*{Agradecimentos}
 
-Bibliographic references must be unambiguous and uniform.  We recommend giving
-the author names references in brackets, e.g. \cite{knuth:84},
-\cite{boulic:91}, and \cite{smith:99}.
+Os autores agradecem à Universidade Federal do Ceará (UFC) pelo suporte institucional.
 
-The references must be listed using 12 point font size, with 6 points of space
-before each reference. The first line of each reference should not be
-indented, while the subsequent should be indented by 0.5 cm.
+
 
 \bibliographystyle{sbc}
-\bibliography{sbc-template}
+\bibliography{referencias}
+
+\section*{Apêndice A — Descrição Completa do Dataset}
+\begin{table}[H]
+\centering
+\caption{Descrição completa dos atributos do dataset de intrusão em redes}
+\label{tab:dataset_full}
+\footnotesize
+\begin{tabular}{|p{4cm}|p{11cm}|}
+\hline
+\textbf{Atributo} & \textbf{Descrição} \\ \hline
+duration & Duração da conexão de rede \\ \hline
+protocol\_type & Protocolo utilizado na conexão (TCP, UDP ou ICMP) \\ \hline
+service & Serviço de rede acessado \\ \hline
+flag & Estado da conexão conforme o protocolo \\ \hline
+src\_bytes & Quantidade de bytes enviados pela origem \\ \hline
+dst\_bytes & Quantidade de bytes enviados pelo destino \\ \hline
+land & Indica se origem e destino possuem mesmo IP e porta \\ \hline
+wrong\_fragment & Número de fragmentos incorretos \\ \hline
+urgent & Número de pacotes marcados como urgentes \\ \hline
+hot & Indicadores de comportamentos suspeitos \\ \hline
+num\_failed\_logins & Número de tentativas de login malsucedidas \\ \hline
+logged\_in & Indica se o login foi realizado com sucesso \\ \hline
+num\_compromised & Número de condições comprometidas \\ \hline
+root\_shell & Indica obtenção de shell com privilégio root \\ \hline
+su\_attempted & Tentativas de uso do comando \textit{su} \\ \hline
+num\_root & Número de acessos root \\ \hline
+num\_file\_creations & Número de arquivos criados \\ \hline
+num\_shells & Número de shells abertos \\ \hline
+num\_access\_files & Número de acessos a arquivos sensíveis \\ \hline
+num\_outbound\_cmds & Número de comandos externos enviados \\ \hline
+is\_host\_login & Indica login como host \\ \hline
+is\_guest\_login & Indica login como convidado \\ \hline
+count & Conexões com o mesmo host em janela de tempo \\ \hline
+srv\_count & Conexões com o mesmo serviço em janela de tempo \\ \hline
+serror\_rate & Taxa de erros SYN \\ \hline
+srv\_serror\_rate & Taxa de erros SYN para o serviço \\ \hline
+rerror\_rate & Taxa de erros de resposta \\ \hline
+srv\_rerror\_rate & Taxa de erros de resposta para o serviço \\ \hline
+same\_srv\_rate & Taxa de conexões para o mesmo serviço \\ \hline
+diff\_srv\_rate & Taxa de conexões para serviços diferentes \\ \hline
+srv\_diff\_host\_rate & Taxa de serviços acessando hosts distintos \\ \hline
+dst\_host\_count & Número de conexões para o mesmo host destino \\ \hline
+dst\_host\_srv\_count & Número de conexões para o mesmo serviço no host \\ \hline
+dst\_host\_same\_srv\_rate & Taxa de serviços iguais para o host destino \\ \hline
+dst\_host\_diff\_srv\_rate & Taxa de serviços diferentes para o host destino \\ \hline
+dst\_host\_same\_src\_port\_rate & Taxa de conexões com mesma porta de origem \\ \hline
+dst\_host\_srv\_diff\_host\_rate & Taxa de serviços com hosts distintos \\ \hline
+dst\_host\_serror\_rate & Taxa de erros SYN no host destino \\ \hline
+dst\_host\_srv\_serror\_rate & Taxa de erros SYN por serviço no host destino \\ \hline
+dst\_host\_rerror\_rate & Taxa de erros de resposta no host destino \\ \hline
+dst\_host\_srv\_rerror\_rate & Taxa de erros de resposta por serviço no host destino \\ \hline
+\end{tabular}
+\end{table}
 
 \end{document}

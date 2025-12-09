@@ -13,7 +13,8 @@ Criação de artigo para detecção de padrões de ataques em rede
 - [x] KNN
 - [x] Random Forest
 - [ ] Comparação entre os modelos
-- [ ] Introdução do dataset
+- [x] Introdução do dataset
+- [ ] PCA (?)
 - [ ] Estruturar análises com retirada de colunas
 - [ ] Analisar dataset menos robusto (?)
 

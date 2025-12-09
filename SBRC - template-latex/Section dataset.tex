@@ -1,0 +1,35 @@
+\section{Dataset e pré-processamento}
+Para este artigo, foi utilizado um dataset obtido na plataforma Kaggle, consistindo em um conjunto de dados no formato .CSV voltado à detecção de intrusão em redes de computadores.
+
+O dataset foi construído a partir da simulação de um ambiente de rede militar típico da Força Aérea dos Estados Unidos, desenvolvido para representar diferentes tipos de tráfego de rede, incluindo tanto comunicações legítimas quanto diversos tipos de ataques.
+
+Cada instância do conjunto de dados representa uma conexão de rede, contendo atributos como a quantidade de bytes transmitidos pela origem, a duração da conexão, entre outros parâmetros, conforme descrito na Tabela a seguir.
+
+\begin{table}[htbp]
+\caption{Descrição dos principais atributos do dataset}
+\label{tab:dataset_features}
+\centering
+\begin{tabular}{|p{3cm}|p{5cm}|}
+\hline
+\textbf{Atributo} & \textbf{Descrição} \\ \hline
+duration & Duração da conexão de rede \\ \hline
+protocol\_type & Protocolo utilizado na conexão (e.g., TCP, UDP, ICMP) \\ \hline
+service & Serviço de rede acessado pela conexão \\ \hline
+flag & Estado da conexão conforme definido pelo protocolo \\ \hline
+src\_bytes & Quantidade de bytes enviados pela origem \\ \hline
+dst\_bytes & Quantidade de bytes recebidos pelo destino \\ \hline
+land & Indica se a conexão é local (origem e destino iguais) \\ \hline
+wrong\_fragment & Número de fragmentos incorretos \\ \hline
+urgent & Número de pacotes urgentes \\ \hline
+num\_failed\_logins & Tentativas de login malsucedidas \\ \hline
+logged\_in & Indica se o login foi realizado com sucesso \\ \hline
+num\_compromised & Número de condições comprometidas \\ \hline
+root\_shell & Indica a obtenção de shell com privilégio root \\ \hline
+count & Número de conexões para o mesmo host em curto intervalo \\ \hline
+srv\_count & Número de conexões para o mesmo serviço \\ \hline
+class & Rótulo da conexão (normal ou ataque) \\ \hline
+\end{tabular}
+\end{table}
+
+
+Por fim, após as simulações realizadas de forma supervisionada, as conexões foram classificadas como tráfego normal ou como intrusão, fazendo com que a variável alvo seja do tipo binária, assumindo os valores Normal ou Anomalia.
