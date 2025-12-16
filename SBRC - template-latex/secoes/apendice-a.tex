@@ -1,0 +1,54 @@
+\section*{Apêndice A — Descrição Completa do Dataset}
+
+\begin{table}[H]
+\centering
+\caption{Descrição completa dos atributos do dataset de intrusão em redes}
+\label{tab:dataset_full}
+\footnotesize
+\begin{tabular}{|p{4cm}|p{11cm}|}
+\hline
+\textbf{Atributo} & \textbf{Descrição} \\ \hline
+duration & Duração da conexão de rede \\ \hline
+protocol\_type & Protocolo utilizado na conexão (TCP, UDP ou ICMP) \\ \hline
+service & Serviço de rede acessado \\ \hline
+flag & Estado da conexão conforme o protocolo \\ \hline
+src\_bytes & Quantidade de bytes enviados pela origem \\ \hline
+dst\_bytes & Quantidade de bytes enviados pelo destino \\ \hline
+land & Indica se origem e destino possuem mesmo IP e porta \\ \hline
+wrong\_fragment & Número de fragmentos incorretos \\ \hline
+urgent & Número de pacotes marcados como urgentes \\ \hline
+hot & Indicadores de comportamentos suspeitos \\ \hline
+num\_failed\_logins & Número de tentativas de login malsucedidas \\ \hline
+logged\_in & Indica se o login foi realizado com sucesso \\ \hline
+num\_compromised & Número de condições comprometidas \\ \hline
+root\_shell & Indica obtenção de shell com privilégio root \\ \hline
+su\_attempted & Tentativas de uso do comando \textit{su} \\ \hline
+num\_root & Número de acessos root \\ \hline
+num\_file\_creations & Número de arquivos criados \\ \hline
+num\_shells & Número de shells abertos \\ \hline
+num\_access\_files & Número de acessos a arquivos sensíveis \\ \hline
+num\_outbound\_cmds & Número de comandos externos enviados \\ \hline
+is\_host\_login & Indica login como host \\ \hline
+is\_guest\_login & Indica login como convidado \\ \hline
+count & Conexões com o mesmo host em janela de tempo \\ \hline
+srv\_count & Conexões com o mesmo serviço em janela de tempo \\ \hline
+serror\_rate & Taxa de erros SYN \\ \hline
+srv\_serror\_rate & Taxa de erros SYN para o serviço \\ \hline
+rerror\_rate & Taxa de erros de resposta \\ \hline
+srv\_rerror\_rate & Taxa de erros de resposta para o serviço \\ \hline
+same\_srv\_rate & Taxa de conexões para o mesmo serviço \\ \hline
+diff\_srv\_rate & Taxa de conexões para serviços diferentes \\ \hline
+srv\_diff\_host\_rate & Taxa de serviços acessando hosts distintos \\ \hline
+dst\_host\_count & Número de conexões para o mesmo host destino \\ \hline
+dst\_host\_srv\_count & Número de conexões para o mesmo serviço no host \\ \hline
+dst\_host\_same\_srv\_rate & Taxa de serviços iguais para o host destino \\ \hline
+dst\_host\_diff\_srv\_rate & Taxa de serviços diferentes para o host destino \\ \hline
+dst\_host\_same\_src\_port\_rate & Taxa de conexões com mesma porta de origem \\ \hline
+dst\_host\_srv\_diff\_host\_rate & Taxa de serviços com hosts distintos \\ \hline
+dst\_host\_serror\_rate & Taxa de erros SYN no host destino \\ \hline
+dst\_host\_srv\_serror\_rate & Taxa de erros SYN por serviço no host destino \\ \hline
+dst\_host\_rerror\_rate & Taxa de erros de resposta no host destino \\ \hline
+dst\_host\_srv\_rerror\_rate & Taxa de erros de resposta por serviço no host destino \\ \hline
+\end{tabular}
+\end{table}
+

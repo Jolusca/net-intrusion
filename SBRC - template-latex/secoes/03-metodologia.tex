@@ -1,0 +1,37 @@
+\section{Metodologia}
+
+\subsection{Modelos Utilizados}
+
+\subsubsection{Random Forest}
+O Random Forest (RF) é um algoritmo de aprendizado de máquina supervisionado baseado em
+conjuntos de árvores de decisão, no qual múltiplas árvores são treinadas a partir de
+subconjuntos aleatórios dos dados e dos atributos, combinando suas previsões por meio de
+votação majoritária. Sua utilização neste trabalho se deve à robustez frente a dados de
+alta dimensionalidade, à capacidade de modelar relações não lineares e à possibilidade de
+analisar a importância das features, características relevantes para problemas de
+detecção de intrusão em redes~\cite{breiman_random_forest}.
+
+\subsubsection{K-Nearest Neighbors}
+
+Outro modelo utilizado foi o K-Nearest Neighbors (KNN). Esse modelo se diferencia dos
+demais por não realizar uma etapa explícita de aprendizado a partir dos dados de
+treinamento. Em vez disso, ele armazena as instâncias conhecidas e classifica uma nova
+entrada com base na similaridade em relação a um número arbitrário ($K$) de exemplos
+mais próximos previamente registrados~\cite{cover_hart_knn}
+
+\subsubsection{Isolation Forest}
+
+O Isolation Forest (IF) é um algoritmo de aprendizado de máquina não supervisionado,
+projetado especificamente para a detecção de anomalias (ou outliers) em conjuntos de
+dados. A escolha do Isolation Forest foi motivada pelo fato de que, em alguns cenários,
+não é possível obter todos os dados rotulados necessários para a detecção de intrusões
+em redes. Dessa forma, buscou-se avaliar se o IF seria capaz de identificar anomalias
+mesmo na ausência parcial dos rótulos utilizados no treinamento~\cite{liu_isolation_forest}.
+
+\subsubsection{Multilayer Perceptron (MLP)}
+O Multilayer Perceptron (MLP) é um modelo de rede neural artificial supervisionado,
+composto por camadas de neurônios interconectados que aplicam transformações não lineares
+sobre os dados de entrada. A escolha do MLP foi motivada por sua capacidade de aprender
+padrões complexos no tráfego de rede, sendo adequado para a detecção de intrusões que
+apresentam comportamentos sutis, embora seu desempenho dependa da escolha adequada de
+hiperparâmetros e do pré-processamento dos dados~\cite{haykin_neural_networks}

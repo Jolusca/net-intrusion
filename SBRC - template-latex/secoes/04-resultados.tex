@@ -1,0 +1,66 @@
+\section{Resultados e Discussão}
+
+\subsection{Resultados com K-Nearest Neighbors}
+
+CHANGE ME (COLOCAR TABELA)
+Após alguns testes, os resultados mais precisos foram encontrados com $K=1$, resultando
+em um F1-Score de 0.9946. Provavelmente, esse comportamento ocorre devido à grande
+quantidade de dados disponíveis para cada entrada de treinamento, o que torna a maioria
+dos ataques mais evidentes. Valores superiores de $K$ levaram ao sobreajuste e ao
+decréscimo progressivo do desempenho do modelo.
+
+Após uma análise baseada na remoção individual de cada atributo, observou-se que o
+parâmetro \textit{hot} foi o mais decisivo para o modelo, reduzindo o F1-Score para
+0.9931 quando removido. Outra informação relevante é que oito atributos, quando
+removidos, aumentaram a precisão do modelo. Após essa remoção, o F1-Score atingiu
+0.9960, sendo o atributo \textit{diff\_srv\_rate} o mais prejudicial, cuja exclusão
+resultou em um aumento de 0.0005 pontos no F1-Score.
+
+
+\subsection{Resultados com Isolation Forest}
+
+No entanto, o Isolation Forest se mostrou ineficiente quando comparado aos outros
+modelos utilizados durante a pesquisa, apresentando a menor acurácia (0.748).
+Entretanto, a acurácia não é a métrica mais confiável em conjuntos de dados
+desbalanceados, o que é comum em problemas de detecção de anomalias, pois pode ser
+inflacionada pela capacidade do modelo em classificar corretamente a classe
+majoritária (tráfego normal). Dessa forma, uma análise mais aprofundada torna-se
+necessária.
+
+\begin{table}[ht]
+\centering
+\caption{Métricas de desempenho do Isolation Forest}
+\label{tab:if_metrics}
+\begin{tabular}{lcc}
+\hline
+\textbf{Métrica} & \textbf{Classe Normal} & \textbf{Classe Anomalia} \\
+\hline
+Precision & 1.00 & 0.65 \\
+Recall    & 0.53 & 1.00 \\
+F1-Score  & 0.69 & 0.79 \\
+Support   & 2690 & 2349 \\
+\hline
+\end{tabular}
+\end{table}
+
+Como pode ser observado na Tabela~\ref{tab:if_metrics}, todos os eventos classificados
+como normais eram, de fato, normais. A principal dificuldade do modelo esteve na
+identificação correta das anomalias, apresentando precisão de 65\% (0.65) ao rotular
+eventos como intrusão. Além disso, considerando todos os eventos analisados, o modelo
+foi capaz de identificar corretamente apenas 53\% (0.53) dos eventos normais, o que
+indica a geração de um elevado número de falsos positivos, isto é, eventos normais
+classificados como ataques.
+
+Por outro lado, o Isolation Forest não apresentou o problema de gerar falsos negativos,
+uma vez que ataques não foram classificados como eventos normais. Em síntese, o modelo
+apresenta dificuldades em verificar se um evento é realmente normal, gerando falsos
+positivos que podem ocasionar retrabalho para equipes de segurança, as quais precisam
+analisar manualmente eventos normais identificados como anômalos.
+
+\subsection{Resultados com Random Forest}
+CHANGE ME
+% Texto a ser inserido
+
+\subsection{Resultados com MLP}
+CHANGE ME
+% Texto a ser inserido
