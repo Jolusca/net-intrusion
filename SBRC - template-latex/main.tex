@@ -35,15 +35,8 @@ Fortaleza -- CE -- Brasil
 
 \maketitle
 
-\begin{abstract}
-%Contexto
-%Problema
-%Proposta/Abordage/Experimento
-%Resultados
-%Conclusão
-\end{abstract}
 \begin{resumo}
-CHANGE ME
+Este trabalho investiga o impacto da seleção e remoção manual de atributos no desempenho de classificadores de Aprendizado de Máquina para detecção de anomalias em redes de computadores. Utilizando o conjunto de dados Network Intrusion Detection, disponibilizado publicamente por Sampada Bhosale \cite{dataset_kaggle}, foram avaliados os modelos Random Forest (RF), K-Nearest Neighbors (KNN), Multilayer Perceptron (MLP) e Isolation Forest (IF). Os experimentos simularam cenários de indisponibilidade de dados através da exclusão controlada de features críticas, como o parâmetro src\_bytes. Os resultados demonstraram que o Random Forest obteve o melhor desempenho inicial, porém apresentou maior sensibilidade à perda de informações, com queda no desempenho ao remover atributos influentes. Em contraste, o MLP revelou maior robustez e capacidade de generalização, mantendo F1-Scores superiores a 0,99 mesmo com conjuntos reduzidos. O estudo conclui que a escolha do classificador deve considerar não apenas a precisão absoluta, mas a resiliência do modelo em ambientes reais onde a integridade dos dados pode ser comprometida.
 \end{resumo}
 
 % -------------------------
