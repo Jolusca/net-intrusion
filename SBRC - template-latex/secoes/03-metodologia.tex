@@ -33,5 +33,14 @@ O Multilayer Perceptron (MLP) é um modelo de rede neural artificial supervision
 composto por camadas de neurônios interconectados que aplicam transformações não lineares
 sobre os dados de entrada. A escolha do MLP foi motivada por sua capacidade de aprender
 padrões complexos no tráfego de rede, sendo adequado para a detecção de intrusões que
-apresentam comportamentos sutis, embora seu desempenho dependa da escolha adequada de
-hiperparâmetros e do pré-processamento dos dados~\cite{haykin_neural_networks}
+apresentam comportamentos sutis. 
+
+Neste trabalho, o modelo foi avaliado em dois cenários:
+um utilizando todas as features disponíveis e outro com a remoção da feature mais
+influente identificada no modelo de melhor resultado, com o objetivo de analisar o impacto da
+redução de atributos em seu desempenho. 
+
+Ressalta-se que o desempenho do MLP depende
+fortemente da escolha adequada de hiperparâmetros e do pré-processamento dos dados,
+conforme discutido na literatura~\cite{haykin_neural_networks}.
+
