@@ -2,7 +2,6 @@
 
 \subsection{Resultados com K-Nearest Neighbors}
 
-CHANGE ME (COLOCAR TABELA)
 Após alguns testes, os resultados mais precisos foram encontrados com $K=1$, resultando
 em um F1-Score de 0.9946. Provavelmente, esse comportamento ocorre devido à grande
 quantidade de dados disponíveis para cada entrada de treinamento, o que torna a maioria
@@ -16,6 +15,21 @@ removidos, aumentaram a precisão do modelo. Após essa remoção, o F1-Score at
 0.9960, sendo o atributo \textit{diff\_srv\_rate} o mais prejudicial, cuja exclusão
 resultou em um aumento de 0.0005 pontos no F1-Score.
 
+\begin{table}[ht]
+\centering
+\caption{Métricas de desempenho do KNN}
+\label{tab:if_metrics}
+\begin{tabular}{lcc}
+\hline
+\textbf{Métrica} & \textbf{Classe Normal} & \textbf{Classe Anomalia} \\
+\hline
+Precision & 0.99 & 0.99 \\
+Recall    & 0.99 & 0.99 \\
+F1-Score  & 0.99 & 0.99 \\
+Support   & 4034 & 3524 \\
+\hline
+\end{tabular}
+\end{table}
 
 \subsection{Resultados com Isolation Forest}
 
@@ -64,3 +78,4 @@ CHANGE ME
 \subsection{Resultados com MLP}
 CHANGE ME
 % Texto a ser inserido
+
