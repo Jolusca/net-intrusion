@@ -14,9 +14,9 @@ Criação de artigo para detecção de padrões de ataques em rede
 - [x] Random Forest
 - [x] Comparação entre os modelos
 - [x] Introdução do dataset
-- [ ] Estruturar análises com retirada de colunas
-- [ ] Resultados MLP
-- [ ] Resultados Random Forest
+- [x] Estruturar análises com retirada de colunas
+- [x] Resultados MLP
+- [x] Resultados Random Forest
 - [ ] Introdução e Abstract
 - [ ] Conclusão
 

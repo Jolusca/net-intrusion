@@ -1,5 +1,5 @@
-\section{Dataset e pré-processamento}
-\subsection{Dataset}
+
+\section{Dataset}
 
 O conjunto de dados utilizado foi obtido a partir da plataforma Kaggle, no repositório
 \textit{Network Intrusion Detection}, disponibilizado publicamente por
@@ -12,26 +12,46 @@ Cada instância do conjunto de dados representa uma conexão de rede, contendo a
 como a quantidade de bytes transmitidos pela origem, a duração da conexão e outros
 parâmetros, conforme descrito na tabela apresentada no Apêndice.
 
-Por fim, após as simulações realizadas de forma supervisionada, as conexões foram
-classificadas como tráfego normal ou como intrusão, fazendo com que a variável alvo
-seja do tipo binária, assumindo os valores \textit{Normal} ou \textit{Anomalia}.
+O conjunto de dados contém aproximadamente 25 mil instâncias, descritas por 42
+atributos. Após a simulação supervisionada do ambiente, as conexões foram rotuladas como
+tráfego normal ou intrusão, caracterizando um problema de classificação binária, no qual
+a variável alvo assume os valores \textit{Normal} ou \textit{Anomalia}. A descrição
+detalhada dos atributos utilizados é apresentada no Apêndice deste trabalho.
+\section{Pré-processamento}
+\subsection{Tratamento de Dados}
+Devido às diferenças entre os modelos avaliados, as etapas de pré-processamento
+foram adaptadas aos requisitos específicos de cada classificador, mantendo a
+comparabilidade dos resultados. Inicialmente, o conjunto de dados foi separado
+em atributos preditores e rótulos, seguido da divisão em conjuntos de treinamento
+e teste por meio de amostragem estratificada.
 
-\subsection{Pré-processamento}
+As variáveis categóricas foram codificadas por meio de \textit{One-Hot Encoding}
+ou \textit{Label Encoding}, conforme o modelo utilizado, enquanto as variáveis
+numéricas foram padronizadas quando necessário. Além disso, foram conduzidos
+experimentos com conjuntos de dados reduzidos, nos quais atributos relevantes
+foram removidos de forma controlada, com o objetivo de avaliar a robustez dos
+modelos frente à ausência parcial de informações.
 
+
+\subsection{Seleção e remoção de Atributos}
 A aplicação da Análise de Componentes Principais (PCA) como etapa de pré-processamento
 tem se mostrado eficaz para a redução da dimensionalidade dos dados sem perda
 significativa de informação. Estudos indicam que o PCA é capaz de preservar cerca de
 99\% da variância original mesmo com reduções superiores a 50\% no número de atributos,
-conforme observado por Santos e Miani~\cite{santos_reducao_dimensao_intrusao}.
+conforme observado por Santos e Miani~\cite{santos_reducao_dimensao_intrusao}. Nesse
+sentido, técnicas de redução e seleção de atributos são amplamente empregadas na
+literatura como forma de mitigar redundâncias e melhorar a generalização dos modelos.
 
-Neste artigo, foram realizadas diferentes análises utilizando modelos de aprendizagem
-de máquina, com o objetivo de identificar as \textit{features} de maior importância
-para cada modelo. Em seguida, buscando simular um cenário mais próximo de um ambiente
-real, no qual nem sempre todos os atributos estão disponíveis para os algoritmos de
-análise, foram conduzidos testes com a remoção das \textit{features} mais relevantes.
-Essa abordagem teve como objetivo analisar a influência de cada atributo no desempenho
-dos modelos, bem como avaliar a robustez de cada método frente à ausência parcial de
-informações.
+Neste artigo, entretanto, optou-se por não aplicar técnicas automáticas de redução de
+dimensionalidade, como o PCA. Em vez disso, foram realizadas diferentes análises
+utilizando modelos de aprendizagem de máquina com o objetivo de identificar as
+\textit{features} de maior importância para cada classificador. Em seguida, buscando
+simular um cenário mais próximo de um ambiente real, no qual nem sempre todos os
+atributos estão disponíveis para os algoritmos de análise, foram conduzidos testes
+com a remoção manual das \textit{features} mais relevantes. Essa abordagem permitiu
+analisar a influência individual de cada atributo no desempenho dos modelos, bem como
+avaliar a robustez de cada método frente à ausência parcial de informações.
+
 
 
 
