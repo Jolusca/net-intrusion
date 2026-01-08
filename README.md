@@ -17,8 +17,8 @@ Criação de artigo para detecção de padrões de ataques em rede
 - [x] Estruturar análises com retirada de colunas
 - [x] Resultados MLP
 - [x] Resultados Random Forest
-- [ ] Introdução e Abstract
-- [ ] Conclusão
+- [x] Introdução e Abstract
+- [x] Conclusão
 
 https://www.canva.com/design/DAG3xUeqaa8/gn4ky1JF9uxutgEoXoED8w/edit
 
