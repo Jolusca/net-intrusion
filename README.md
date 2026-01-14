@@ -1,6 +1,53 @@
 # net-intrusion
 Criação de artigo para detecção de padrões de ataques em rede
 
+
+## Checklist de Correções do Artigo
+
+### Alberto - Introdução, Contexto e Trabalhos Relacionados
+
+**Foco:** Embasamento teórico geral e referências
+
+- [ ] Adicionar referências para afirmações gerais da introdução:
+  - Uso de aprendizado de máquina em sistemas de detecção de intrusões
+  - Importância da seleção e remoção de atributos
+- [ ] Inserir estudos que:
+  - Avaliem modelos de ML aplicados à detecção de anomalias em redes
+  - Utilizem técnicas de seleção ou remoção de atributos
+
+---
+
+### João Lucas Mota — Fundamentação dos Modelos e Técnicas
+
+**Foco:** Explicação conceitual dos métodos e técnicas citadas
+
+- [ ] Explicar as técnicas de pré-processamento citadas no texto:
+  - [ ] One-Hot Encoding
+  - [ ] Label Encoding
+  - [ ] Padronização / Normalização dos dados
+  - [ ] Amostragem estratificada
+- [ ] Esclarecer a diferença entre:
+  - Redução de dimensionalidade (ex.: PCA)
+  - Remoção manual de atributos
+- [ ] Justificar teoricamente a escolha pela remoção manual de features no estudo
+
+---
+
+### João Lucas Rodrigues -  Métricas, Avaliação e Clareza Textual
+
+**Foco:** Métricas de desempenho, consistência e clareza científica
+
+- [ ] Criar uma subseção explicando as métricas utilizadas:
+  - [ ] Precision
+  - [ ] Recall
+  - [ ] F1-Score
+  - [ ] Support
+- [ ] Explicar por que a acurácia, isoladamente, não é suficiente para avaliação
+- [ ] Garantir que todas as métricas presentes nas tabelas sejam citadas e explicadas no texto
+- [ ] Revisar ortografia e padronização da escrita:
+  - Corrigir termos como *directamente*, *correctamente*, *selecção*, etc.
+
+---
 ### TODO 
 - [x] reseach questions
 - [x] slides de PoC 
@@ -17,8 +64,6 @@ Criação de artigo para detecção de padrões de ataques em rede
 - [x] Estruturar análises com retirada de colunas
 - [x] Resultados MLP
 - [x] Resultados Random Forest
-- [ ] Introdução e Abstract
-- [ ] Conclusão
 
 https://www.canva.com/design/DAG3xUeqaa8/gn4ky1JF9uxutgEoXoED8w/edit
 
