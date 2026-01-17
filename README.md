@@ -21,15 +21,15 @@ Criação de artigo para detecção de padrões de ataques em rede
 
 **Foco:** Explicação conceitual dos métodos e técnicas citadas
 
-- [ ] Explicar as técnicas de pré-processamento citadas no texto:
-  - [ ] One-Hot Encoding
-  - [ ] Label Encoding
-  - [ ] Padronização / Normalização dos dados
-  - [ ] Amostragem estratificada
-- [ ] Esclarecer a diferença entre:
+- [x] Explicar as técnicas de pré-processamento citadas no texto:
+  - [x] One-Hot Encoding
+  - [x] Label Encoding
+  - [x] Padronização / Normalização dos dados
+  - [x] Amostragem estratificada
+- [x] Esclarecer a diferença entre:
   - Redução de dimensionalidade (ex.: PCA)
   - Remoção manual de atributos
-- [ ] Justificar teoricamente a escolha pela remoção manual de features no estudo
+- [x] Justificar teoricamente a escolha pela remoção manual de features no estudo
 
 ---
 

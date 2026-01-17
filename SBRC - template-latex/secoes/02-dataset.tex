@@ -31,6 +31,18 @@ numéricas foram padronizadas quando necessário. Além disso, foram conduzidos
 experimentos com conjuntos de dados reduzidos, nos quais atributos relevantes
 foram removidos de forma controlada, com o objetivo de avaliar a robustez dos
 modelos frente à ausência parcial de informações.
+A codificação das variáveis categóricas por meio de \textit{One-Hot Encoding} e \textit{Label Encoding} 
+foi necessária para permitir que os algoritmos de aprendizagem de máquina processem atributos originalmente representados em formato textual. 
+O \textit{One-Hot Encoding} transforma categorias nominais em vetores binários, evitando a introdução de relações ordinais artificiais entre valores distintos, 
+sendo especialmente indicado para modelos sensíveis à representação dos dados~\cite{hastie_elements_statistical_learning}. Por outro lado, o \textit{Label Encoding} 
+atribui valores inteiros às categorias, apresentando menor custo computacional e sendo apropriado para algoritmos baseados em árvores de decisão, 
+nos quais a relação ordinal não compromete o processo de aprendizagem~\cite{geron_hands_on_ml}. 
+
+Adicionalmente, a padronização das variáveis numéricas foi realizada por meio da normalização baseada na média e no desvio padrão, 
+garantindo que atributos com escalas distintas contribuíssem de forma equilibrada para o processo de treinamento dos modelos~\cite{bishop_pattern_recognition}. 
+A divisão do conjunto de dados em subconjuntos de treinamento e teste foi conduzida utilizando amostragem estratificada, assegurando a preservação da proporção original entre 
+tráfego normal e anomalias. Para essa etapa, adotou-se uma proporção de 70\% dos dados para treinamento e 30\% para teste, o que é especialmente relevante em problemas de 
+classificação com classes desbalanceadas, pois contribui para uma avaliação mais representativa do desempenho dos modelos~\cite{kohavi_cross_validation}.
 
 
 \subsection{Seleção e remoção de Atributos}
@@ -42,15 +54,17 @@ conforme observado por Santos e Miani~\cite{santos_reducao_dimensao_intrusao}. N
 sentido, técnicas de redução e seleção de atributos são amplamente empregadas na
 literatura como forma de mitigar redundâncias e melhorar a generalização dos modelos.
 
-Neste artigo, entretanto, optou-se por não aplicar técnicas automáticas de redução de
-dimensionalidade, como o PCA. Em vez disso, foram realizadas diferentes análises
-utilizando modelos de aprendizagem de máquina com o objetivo de identificar as
-\textit{features} de maior importância para cada classificador. Em seguida, buscando
-simular um cenário mais próximo de um ambiente real, no qual nem sempre todos os
-atributos estão disponíveis para os algoritmos de análise, foram conduzidos testes
-com a remoção manual das \textit{features} mais relevantes. Essa abordagem permitiu
-analisar a influência individual de cada atributo no desempenho dos modelos, bem como
-avaliar a robustez de cada método frente à ausência parcial de informações.
+É importante destacar a diferença conceitual entre técnicas de redução de dimensionalidade, 
+como o PCA, e a remoção manual de atributos adotada neste estudo. Enquanto o PCA realiza 
+uma transformação linear dos dados, projetando-os em um novo espaço de menor dimensão 
+por meio da combinação dos atributos originais, a abordagem empregada neste trabalho 
+consistiu na exclusão direta de variáveis específicas do conjunto de dados. Essa escolha 
+permitiu preservar a interpretabilidade das \textit{features} remanescentes, além de 
+possibilitar a análise individual do impacto da ausência de cada atributo no desempenho 
+dos classificadores. Ademais, essa estratégia representa de forma mais fiel cenários 
+práticos, nos quais nem sempre todas as informações ou sensores estão disponíveis, 
+contribuindo para a avaliação da robustez dos modelos frente à perda parcial de dados.
+
 
 
 
