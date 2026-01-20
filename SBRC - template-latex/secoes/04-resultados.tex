@@ -1,9 +1,18 @@
 \section{Resultados e Discussão}
 
+\subsection{Métricas de Avaliação}
+Para analisar o desempenho dos classificadores, foram utilizadas métricas fundamentais de aprendizado de máquina: \textit{Precision}, \textit{Recall}, \textit{F1-Score} e \textit{Support}.
+
+A \textit{Precision} avalia a porcentagem de instancias dadas como positivas que eram realmente positivas, ajudando a identificar a quantidade adivinhações falsas positivas. Em contrapartida, o \textit{Recall} mede a capacidade do modelo de identificar corretamente todas as instancias positivas presentes no dataset, servindo para medir a proporção de adivinhações falsas negativas.
+
+O \textit{F1-Score} consiste na média harmônica entre a precisão e o recall, sendo particularmente útil quando se busca um equilíbrio entre essas duas métricas. Por fim, o \textit{Support} refere-se ao número de ocorrências de cada instancia no dataset tanto negativas(Normal) quanto negativas(Anomala)
+
+A métrica de \textit{acurácia} não é ideal para essa analise tendo em vista que a maioria dos acessos de rede no mundo real são normais e raramente anômalos, então é muito mais interessante analisar falsos negativos e positivos do que o acerto geral.
+
 \subsection{Resultados com K-Nearest Neighbors}
 
 Para o modelo KNN, foram realizados alguns testes, com os resultados mais precisos foram encontrados com $K=1$, resultando
-em um F1-Score de 0.9946 e uma acurácia de 0.9960. Provavelmente, esse comportamento ocorre devido à grande
+em um F1-Score de 0.9946 e uma quantidade quase nula de falsos negativos/positivos. Provavelmente, esse comportamento ocorre devido à grande
 quantidade de dados disponíveis para cada entrada de treinamento, o que torna a maioria
 dos ataques mais evidentes. Valores superiores de $K$ levaram ao sobreajuste e ao
 decréscimo progressivo do desempenho do modelo.
@@ -35,7 +44,7 @@ Support   & 4034 & 3524 \\
 
 O Isolation Forest se mostrou ineficiente quando comparado aos outros
 modelos utilizados durante a pesquisa, apresentando a menor acurácia (0.748).
-Entretanto, a acurácia não é a métrica mais confiável em conjuntos de dados
+Entretanto, como falado anteriormente, a acurácia não é a métrica mais confiável em conjuntos de dados
 desbalanceados, o que é comum em problemas de detecção de anomalias, pois pode ser
 inflacionada pela capacidade do modelo em classificar corretamente a classe
 majoritária (tráfego normal). Dessa forma, uma análise mais aprofundada torna-se

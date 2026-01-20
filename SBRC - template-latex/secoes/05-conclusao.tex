@@ -1,11 +1,11 @@
 \section{Conclusão}
 
-Este trabalho analisou a influência da seleção de atributos e do desempenho de diferentes classificadores na detecção de anomalias em redes de computadores. Através de uma abordagem de remoção controlada de atributos, foi possível observar como a integridade dos dados impacta directamente a eficácia dos sistemas de detecção de intrusões.
+Este trabalho analisou a influência da seleção de atributos e do desempenho de diferentes classificadores na detecção de anomalias em redes de computadores. Através de uma abordagem de remoção controlada de atributos, foi possível observar como a integridade dos dados impacta diretamente a eficácia dos sistemas de detecção de intrusões.
 
-Os resultados demonstraram que o modelo Random Forest apresentou o desempenho mais elevado com o conjunto de dados completo, alcançando uma acurácia de 0,9975. Contudo, este modelo revelou-se extremamente sensível à ausência de informações críticas, como o parâmetro \textit{src\_bytes}, sofrendo uma degradação significativa na sua capacidade de identificar correctamente o tráfego normal.
+Os resultados demonstraram que o modelo Random Forest apresentou o desempenho mais elevado com o conjunto de dados completo, alcançando resultados globais mais proximos de 1.0. Contudo, este modelo revelou-se extremamente sensível à ausência de informações críticas, como o parâmetro \textit{src\_bytes}, sofrendo uma degradação significativa na sua capacidade de identificar corretamente o tráfego normal.
 
 Em contrapartida, o Multilayer Perceptron (MLP) destacou-se pela sua robustez e capacidade de generalização. Mesmo após a remoção de atributos altamente influentes, o MLP manteve um desempenho consistente com F1-Scores superiores a 0,99. Este comportamento sugere que redes neurais conseguem aprender representações distribuídas dos dados, tornando-as menos dependentes de variáveis individuais em comparação com modelos baseados em árvores de decisão.
 
 Adicionalmente, o estudo revelou as limitações do Isolation Forest, que apresentou um elevado índice de falsos positivos, e a sensibilidade do KNN ao parâmetro $K$ e a atributos específicos como o \textit{hot} e o \textit{diff\_srv\_rate}. 
 
-Conclui-se que a selecção de um classificador para segurança de redes não deve basear-se exclusivamente na precisão absoluta em ambientes controlados. Em cenários reais, onde a captura de pacotes pode ser imperfeita ou incompleta, a resiliência do modelo torna-se um factor determinante.
+Conclui-se que a seleção de um classificador para segurança de redes não deve basear-se exclusivamente na precisão absoluta em ambientes controlados. Em cenários reais, onde a captura de pacotes pode ser imperfeita ou incompleta, a resiliência do modelo torna-se um fator determinante.
