@@ -8,10 +8,10 @@ Criação de artigo para detecção de padrões de ataques em rede
 
 **Foco:** Embasamento teórico geral e referências
 
-- [ ] Adicionar referências para afirmações gerais da introdução:
+- [x] Adicionar referências para afirmações gerais da introdução:
   - Uso de aprendizado de máquina em sistemas de detecção de intrusões
   - Importância da seleção e remoção de atributos
-- [ ] Inserir estudos que:
+- [x] Inserir estudos que:
   - Avaliem modelos de ML aplicados à detecção de anomalias em redes
   - Utilizem técnicas de seleção ou remoção de atributos
 
@@ -44,8 +44,8 @@ Criação de artigo para detecção de padrões de ataques em rede
   - [ ] Support
 - [ ] Explicar por que a acurácia, isoladamente, não é suficiente para avaliação
 - [ ] Garantir que todas as métricas presentes nas tabelas sejam citadas e explicadas no texto
-- [ ] Revisar ortografia e padronização da escrita:
-  - Corrigir termos como *directamente*, *correctamente*, *selecção*, etc.
+- [x] Revisar ortografia e padronização da escrita:
+  [x] - Corrigir termos como *directamente*, *correctamente*, *selecção*, etc.
 
 ---
 ### TODO 
