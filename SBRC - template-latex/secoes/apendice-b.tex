@@ -1,0 +1,35 @@
+\section*{Apêndice B — Comparativo de Desempenho dos Modelos}
+
+As tabelas a seguir apresentam um comparativo direto entre os modelos avaliados neste estudo, segmentados pelas classes de tráfego.
+
+\begin{table}[H]
+\centering
+\caption{Comparativo de métricas para a Classe Normal}
+\label{tab:comparativo_normal}
+\footnotesize
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+\textbf{Métrica} & \textbf{KNN} & \textbf{IF} & \textbf{RF (Full)} & \textbf{RF (Red.)} & \textbf{MLP (Full)} & \textbf{MLP (Red.)} \\ \hline
+Precision & 0.99 & 1.00 & 1.00 & 0.99 & 0.9953 & 0.9973 \\ \hline
+Recall    & 0.99 & 0.53 & 1.00 & 0.93 & 0.9973 & 0.9938 \\ \hline
+F1-Score  & 0.99 & 0.69 & 1.00 & 0.96 & 0.9963 & 0.9955 \\ \hline
+Support   & 4034 & 2690 & 3523 & 3523 & 4035   & 4035   \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Comparativo de métricas para a Classe Anomalia}
+\label{tab:comparativo_anomalia}
+\footnotesize
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+\textbf{Métrica} & \textbf{KNN} & \textbf{IF} & \textbf{RF (Full)} & \textbf{RF (Red.)} & \textbf{MLP (Full)} & \textbf{MLP (Red.)} \\ \hline
+Precision & 0.99 & 0.65 & 1.00 & 0.94 & 0.9969 & 0.9929 \\ \hline
+Recall    & 0.99 & 1.00 & 1.00 & 0.99 & 0.9946 & 0.9969 \\ \hline
+F1-Score  & 0.99 & 0.79 & 1.00 & 0.97 & 0.9957 & 0.9949 \\ \hline
+Support   & 3524 & 2349 & 4035 & 4035 & 3523   & 3523   \\ \hline
+\end{tabular}
+\end{table}
+
+\textit{Nota: RF (Full) e MLP (Full) referem-se aos modelos com todas as features; RF (Red.) e MLP (Red.) referem-se aos modelos sem a feature src\_bytes.}
